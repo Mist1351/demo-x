@@ -5,7 +5,7 @@
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>{{ site.url }} or {{ post.url }}
     </li>
   {% endfor %}
 </ul>
